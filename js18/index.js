@@ -107,12 +107,12 @@ for (let item of arr) { // цикл чтобы достать каждый ай�
   // прибавить его к расходам
   // ...............................
   
-  item.percent = Math.round(item.expensesPerMonth * 100 / budgetForMonth) + "%" // создаем новй ключ процент 
+  item.percent = Math.round(item.expensesPerMonth * 100 / budgetForMonth)// создаем новй ключ процент 
   // присваиваем к нему соотношение трат к месячному бьджету и округляем
 
 
   //1
-  item.percent > "70%" ? success.push(item) : unsuccess.push(item)
+  item.percent > 70 ? success.push(item) : unsuccess.push(item)
 
 
 }
